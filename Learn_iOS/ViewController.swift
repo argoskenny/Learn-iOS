@@ -8,23 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController, DetailViewControllerDelegate, UITableViewDataSource {
+class ViewController: UIViewController, DetailViewControllerDelegate, UITableViewDataSource, UITableViewDelegate {
     
     var number: Int = 0
     var data: [String] = []
+    var dataTitle: [String] = []
     
     var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initiateTableView()
-        data = ["a","b","c","d","e","a","b","c","d","e","a","b","c","d","e","a","b","c","d","e","a","b","c","d","e","a","b","c","d","e"]
+        data = ["a","b","c","a","b","c","a","b","c"]
+        dataTitle = ["alkcnklascnlk","a;cmal;sc","alkncaklsnv","a;lvmal;sv","a;lscml;acm","alcsnmaslc","alkcsla","alsnclacns","c"]
     }
     
     func initiateTableView() {
         tableView = UITableView(frame: self.view.frame)
+        tableView.register(NewsTableViewCell.self, forCellReuseIdentifier: "newsCell")
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "abc")
+        
         tableView.dataSource = self
+        tableView.delegate = self
+        
         self.view.addSubview(tableView)
     }
     
@@ -56,9 +62,14 @@ class ViewController: UIViewController, DetailViewControllerDelegate, UITableVie
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print(indexPath.row)
-        let cell = tableView.dequeueReusableCell(withIdentifier: "abc", for: indexPath)
-        cell.textLabel?.text = data[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath) as! NewsTableViewCell
+        cell.newsImageView.image = UIImage(named: data[indexPath.row] + "_img")
+        cell.newsTitle.text = dataTitle[indexPath.row]
         return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
 }

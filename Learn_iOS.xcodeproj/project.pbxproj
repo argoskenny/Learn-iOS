@@ -15,6 +15,7 @@
 		B905AB5520E3ACBF00AF4D7F /* Learn_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905AB5420E3ACBF00AF4D7F /* Learn_iOSTests.swift */; };
 		B905AB6020E3ACBF00AF4D7F /* Learn_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905AB5F20E3ACBF00AF4D7F /* Learn_iOSUITests.swift */; };
 		B905AB6E20E3AD1F00AF4D7F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905AB6D20E3AD1F00AF4D7F /* DetailViewController.swift */; };
+		B9C94D7A20F77B2400F7244C /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C94D7920F77B2400F7244C /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B905AB5F20E3ACBF00AF4D7F /* Learn_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn_iOSUITests.swift; sourceTree = "<group>"; };
 		B905AB6120E3ACBF00AF4D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B905AB6D20E3AD1F00AF4D7F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B9C94D7920F77B2400F7244C /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				B905AB3F20E3ACBD00AF4D7F /* AppDelegate.swift */,
 				B905AB4120E3ACBD00AF4D7F /* ViewController.swift */,
 				B905AB6D20E3AD1F00AF4D7F /* DetailViewController.swift */,
+				B9C94D7920F77B2400F7244C /* NewsTableViewCell.swift */,
 				B905AB4320E3ACBD00AF4D7F /* Main.storyboard */,
 				B905AB4620E3ACBE00AF4D7F /* Assets.xcassets */,
 				B905AB4820E3ACBE00AF4D7F /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				B905AB6E20E3AD1F00AF4D7F /* DetailViewController.swift in Sources */,
 				B905AB4220E3ACBD00AF4D7F /* ViewController.swift in Sources */,
+				B9C94D7A20F77B2400F7244C /* NewsTableViewCell.swift in Sources */,
 				B905AB4020E3ACBD00AF4D7F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
